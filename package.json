@@ -1,15 +1,15 @@
 {
-  "name": "react-ssr-starter",
+  "name": "managed-ea",
   "version": "1.0.0",
   "description": "All have been introduced React environment",
   "bugs": {
-    "url": "https://bitbucket.org/shibamoto/react-ssr-starter/issues"
+    "url": "https://bitbucket.org/shibamoto/managed-ea/issues"
   },
   "main": "index.js",
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "git+https://shibamoto@bitbucket.org/shibamoto/react-ssr-starter.git"
+    "url": "git+https://shibamoto@bitbucket.org/shibamoto/managed-ea.git"
   },
   "keywords": [
     "node.js",
@@ -17,7 +17,7 @@
   ],
   "author": "silverbirder",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/shibamoto/react-ssr-starter#readme",
+  "homepage": "https://bitbucket.org/shibamoto/managed-ea#readme",
   "scripts": {
     "build": "npm run build:client && npm run build:server",
     "build:analyze": "npm run build:client:analyze & npm run build:server:analyze",
@@ -43,13 +43,17 @@
     "deploy": "gcloud app deploy"
   },
   "husky": {
-    "hooks": {  
+    "hooks": {
       "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
     "linters": {
-      "src/**/*.js": ["eslint --fix", "stylelint --fix", "git add"]
+      "src/**/*.js": [
+        "eslint --fix",
+        "stylelint --fix",
+        "git add"
+      ]
     }
   },
   "dependencies": {
@@ -152,7 +156,7 @@
     "workbox-webpack-plugin": "^3.6.3"
   },
   "engines": {
-    "node": "8.x.x",
+    "node": "10.x.x",
     "npm": "5.6.0"
   },
   "snyk": true

@@ -1,4 +1,4 @@
-# react-ssr-starter
+# managed-ea
 
 All have been introduced React environment.
 
@@ -22,12 +22,16 @@ All have been introduced React environment.
 - [enzyme](http://airbnb.io/enzyme/)
 - [webpack](https://webpack.js.org/)
 - [babel](https://babeljs.io/)
+- [codecov](https://codecov.io/)
+- [esdoc](https://esdoc.org/)
+- [snyk](https://snyk.docs.apiary.io/)
+- [circleci](https://circleci.com/)
 
 ## Install
 
 ```
-$ git clone https://github.com/osamu38/react-ssr-starter.git
-$ cd react-ssr-starter
+$ git clone https://github.com/silverbirder/managed-ea.git
+$ cd managed-ea
 $ npm i
 ```
 
