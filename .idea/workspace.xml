@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbdc8531-9434-4ac9-9169-2ae546d0d00f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gcloudignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gcloudignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/url.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/url.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/fxUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/fxUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/FxUser/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/FxUser/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/ui.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,8 +61,8 @@
           <entry key="eslintignore" value="2" />
           <entry key="flowconfig" value="15" />
           <entry key="gcloudignore" value="2" />
-          <entry key="gitignore" value="4" />
-          <entry key="js" value="378" />
+          <entry key="gitignore" value="5" />
+          <entry key="js" value="379" />
           <entry key="json" value="23" />
           <entry key="prettierignore" value="1" />
           <entry key="prettierrc" value="1" />
@@ -85,8 +76,8 @@
           <entry key="Dockerfile" value="1" />
           <entry key="Ini" value="14" />
           <entry key="JSON" value="27" />
-          <entry key="JavaScript" value="378" />
-          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="JavaScript" value="379" />
+          <entry key="PLAIN_TEXT" value="15" />
           <entry key="TypeScript" value="5" />
           <entry key="YAML" value="4" />
         </counts>
@@ -102,7 +93,7 @@
         <counts>
           <entry key="babelrc" value="21" />
           <entry key="flowconfig" value="18" />
-          <entry key="gitignore" value="23" />
+          <entry key="gitignore" value="31" />
           <entry key="js" value="8250" />
           <entry key="json" value="56" />
           <entry key="yaml" value="21" />
@@ -113,7 +104,7 @@
           <entry key="Ini" value="18" />
           <entry key="JSON" value="77" />
           <entry key="JavaScript" value="8250" />
-          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="PLAIN_TEXT" value="31" />
           <entry key="YAML" value="21" />
         </counts>
       </usages-collector>
@@ -124,11 +115,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/FxUser/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+            <state relative-caret-position="45">
+              <caret line="3" column="34" lean-forward="true" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#13#44#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/FxUserDetail/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="52" column="48" lean-forward="true" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
+            <state relative-caret-position="810">
+              <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#13#44#0" expanded="true" />
@@ -178,11 +168,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="178" column="57" selection-start-line="178" selection-start-column="57" selection-end-line="178" selection-end-column="57" />
+            <state relative-caret-position="471">
+              <caret line="179" column="57" selection-start-line="179" selection-start-column="57" selection-end-line="179" selection-end-column="57" />
               <folding>
                 <element signature="e#45#75#0" expanded="true" />
               </folding>
@@ -202,11 +201,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/config/url.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/fxData.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#13#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -270,7 +282,6 @@
         <option value="$PROJECT_DIR$/tools/webpack/getResolve.js" />
         <option value="$PROJECT_DIR$/tools/webpack/getModule.js" />
         <option value="$PROJECT_DIR$/.babelrc" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.gcloudignore" />
         <option value="$PROJECT_DIR$/app.yaml" />
         <option value="$PROJECT_DIR$/src/components/Menu/index.js" />
@@ -289,10 +300,11 @@
         <option value="$PROJECT_DIR$/src/types/fxUser.js" />
         <option value="$PROJECT_DIR$/src/reducers/fxUser.js" />
         <option value="$PROJECT_DIR$/src/pages/FxUserDetail/index.js" />
-        <option value="$PROJECT_DIR$/src/pages/FxUser/index.js" />
         <option value="$PROJECT_DIR$/src/actions/fxUser.js" />
         <option value="$PROJECT_DIR$/src/server.js" />
         <option value="$PROJECT_DIR$/src/config/url.js" />
+        <option value="$PROJECT_DIR$/src/pages/FxUser/index.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -367,66 +379,6 @@
               <item name="managed-ea" type="b2602c69:ProjectViewProjectNode" />
               <item name="managed-ea" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="managed-ea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="managed-ea" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="managed-ea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="managed-ea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="managed-ea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="managed-ea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="managed-ea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="managed-ea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="managed-ea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="managed-ea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="managed-ea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="managed-ea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="FxUser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="managed-ea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="managed-ea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="FxUserDetail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="managed-ea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="managed-ea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="managed-ea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="managed-ea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="managed-ea" type="b2602c69:ProjectViewProjectNode" />
-              <item name="managed-ea" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -436,10 +388,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="inde&#9;FILE&#9;file:///Users/shibamoto/docker/node/managed-ea/src/pages/FxUser/index.js&#10;FxUser/index&#9;FILE&#9;file:///Users/shibamoto/docker/node/managed-ea/src/pages/FxUser/index.js&#10;FxUser&#9;null&#9;null&#10;src/&#9;FILE&#9;file:///Users/shibamoto/docker/node/managed-ea/src&#10;Re&#9;null&#9;null&#10;Release&#9;null&#9;null&#10;index.&#9;FILE&#9;file:///Users/shibamoto/docker/node/managed-ea/src/types/index.js" />
+    <property name="SearchEverywhereHistoryKey" value="FxUser&#9;null&#9;null&#10;fxData&#9;FILE&#9;file:///Users/shibamoto/docker/node/managed-ea/src/actions/fxData.js&#10;inde&#9;FILE&#9;file:///Users/shibamoto/docker/node/managed-ea/src/pages/FxUser/index.js&#10;FxUser/index&#9;FILE&#9;file:///Users/shibamoto/docker/node/managed-ea/src/pages/FxUser/index.js&#10;src/&#9;FILE&#9;file:///Users/shibamoto/docker/node/managed-ea/src&#10;Re&#9;null&#9;null&#10;Release&#9;null&#9;null&#10;index.&#9;FILE&#9;file:///Users/shibamoto/docker/node/managed-ea/src/types/index.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544425124250" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544426170850" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.0.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -507,18 +459,18 @@
       <workItem from="1544141918914" duration="16061000" />
       <workItem from="1544172962622" duration="1600000" />
       <workItem from="1544364064044" duration="6392000" />
-      <workItem from="1544414567174" duration="9901000" />
+      <workItem from="1544414567174" duration="10810000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88211000" />
+    <option name="totallyTimeSpent" value="89120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="23" width="960" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3583878" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3583878" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -589,13 +541,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Menu/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -729,9 +674,6 @@
           <caret column="11" selection-start-column="11" selection-end-column="11" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/fxData.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/string-replace-webpack-plugin/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -876,49 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/fxUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#13#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/FxUserDetail/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="52" column="48" lean-forward="true" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#13#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/FxUser/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#13#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="178" column="57" selection-start-line="178" selection-start-column="57" selection-end-line="178" selection-end-column="57" />
-          <folding>
-            <element signature="e#45#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="915">
@@ -931,8 +830,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/config/url.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/fxData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#13#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/FxUserDetail/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#13#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/FxUser/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="34" lean-forward="true" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="179" column="57" selection-start-line="179" selection-start-column="57" selection-end-line="179" selection-end-column="57" />
+          <folding>
+            <element signature="e#45#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/fxUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#13#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>

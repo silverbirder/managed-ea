@@ -6,16 +6,6 @@ import Title from 'components/Title';
 import { fetchFxUsers } from 'actions/fxUser';
 import type { PageProps, ReduxState, Dispatch } from 'types';
 import Button from 'components/Button';
-import styled from 'styled-components';
-
-const ModalUI = styled.div`
-  position: absolute;
-  background-color: white;
-  top: 25%;
-  left: 10%;
-  width: 75%;
-  padding: 10px;
-`;
 
 export default class FxUser extends React.PureComponent<PageProps> {
   static loadData(dispatch: Dispatch, state: ReduxState, params: Object) {
@@ -43,16 +33,14 @@ export default class FxUser extends React.PureComponent<PageProps> {
             </tr>
           </thead>
           <tbody>
-            {fxUserList.map((data, i) => {
-              return (
+            {fxUserList.map((data, i) => (
                 <tr key={i}>
-                  <td><a href={"/fxUser/"+data.Key}>edit</a></td>
+                  <td><a href={`/fxUser/${data.Key}`}>edit</a></td>
                   <td>{data.Name}</td>
                   <td>{data.AccountNumber}</td>
                   <td>{data.Invalid == false ? "Release": "Limited"}</td>
                 </tr>
-              );
-            })}
+              ))}
           </tbody>
         </table>
       </div>

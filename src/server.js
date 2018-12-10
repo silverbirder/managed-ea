@@ -30,9 +30,10 @@ import { joinPath } from 'utils/path';
 import { port as defaultPort } from 'config/url';
 import type { $Request, $Response } from 'express';
 import Datastore from '@google-cloud/datastore';
+
 const projectId = 'ma-web-tools';
 const datastore = new Datastore({
-  projectId: projectId,
+  projectId,
 });
 
 const port = process.env.PORT || defaultPort;
@@ -152,7 +153,7 @@ app.get('/api/get/1.0/fxUsers', (req: $Request, res: $Response) => {
     const transData = result.map(data => {
       if (Array.isArray(data)) {
         return data.map(atom => {
-          atom['Key'] = atom[datastore.KEY].id;
+          atom.Key = atom[datastore.KEY].id;
           return atom;
         })
       }
@@ -168,7 +169,7 @@ app.get('/api/get/1.0/fxUser', (req: $Request, res: $Response) => {
   }
   const query = datastore.createQuery('FxUser').filter('__key__', datastore.key(['FxUser', parseInt(id)]));
   datastore.runQuery(query).then(result => {
-    result[0][0]["Key"] = result[0][0][datastore.KEY].id;
+    result[0][0].Key = result[0][0][datastore.KEY].id;
     res.send(result);
   });
 });
@@ -181,13 +182,11 @@ app.post('/api/add/1.0/fxUser', (req: $Request, res: $Response) => {
   datastore.save({
     key: targetKey,
     data: {
-      Name: Name,
-      AccountNumber: AccountNumber,
-      Invalid: Invalid,
+      Name,
+      AccountNumber,
+      Invalid,
     }
-  }).then(result => {
-      return res.send(true);
-  });
+  }).then(result => res.send(true));
 });
 
 app.get('*', async (req: $Request, res: $Response) => {
