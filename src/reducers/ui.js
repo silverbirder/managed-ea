@@ -4,6 +4,7 @@ import type { UiState, UiAction } from 'types/ui';
 
 export const initialState = {
   isOpenMenu: false,
+  isOpenModal: false,
   error: '',
 };
 export default (state: UiState = initialState, action: UiAction) => {
@@ -17,6 +18,16 @@ export default (state: UiState = initialState, action: UiAction) => {
       return {
         ...state,
         isOpenMenu: false,
+      };
+    case 'OPEN_MODAL':
+      return {
+        ...state,
+        isOpenModal: true,
+      };
+    case 'CLOSE_MODAL':
+      return {
+        ...state,
+        isOpenModal: false,
       };
     case 'SHOW_ERROR':
       return {

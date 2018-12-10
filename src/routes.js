@@ -6,6 +6,8 @@ import Landing from 'pages/Landing';
 import Home from 'pages/Home';
 import UserDetail from 'pages/UserDetail';
 import About from 'pages/About';
+import FxUser from 'pages/FxUser';
+import FxUserDetail from 'pages/FxUserDetail';
 import RedirectAbout from 'pages/RedirectAbout';
 import NotFound from 'pages/NotFound';
 
@@ -51,6 +53,14 @@ export default [
       {
         path: endpoint.about,
         component: About,
+      },
+      {
+        path: endpoint.fxuser,
+        component: FxUser,
+      },
+      {
+        path: endpoint.fxUserDetail,
+        component: FxUserDetail,
       },
       {
         path: endpoint.redirectAbout,

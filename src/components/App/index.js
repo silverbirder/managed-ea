@@ -13,6 +13,8 @@ import Main from 'components/Main';
 import Error from 'components/Error';
 import * as userActions from 'actions/user';
 import * as uiActions from 'actions/ui';
+import * as fxUserActions from 'actions/fxUser';
+import * as fxDataActions from 'actions/fxData';
 import meta from 'utils/meta';
 import link from 'utils/link';
 import routes from 'routes';
@@ -82,6 +84,8 @@ function mapDispatchToProps() {
   return (dispatch: Dispatch) => ({
     userActions: bindActionCreators(userActions, dispatch),
     uiActions: bindActionCreators(uiActions, dispatch),
+    fxUserActions: bindActionCreators(fxUserActions, dispatch),
+    fxDataActions: bindActionCreators(fxDataActions, dispatch),
   });
 }
 

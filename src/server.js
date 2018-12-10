@@ -29,6 +29,11 @@ import { isDevelopment } from 'config/env';
 import { joinPath } from 'utils/path';
 import { port as defaultPort } from 'config/url';
 import type { $Request, $Response } from 'express';
+import Datastore from '@google-cloud/datastore';
+const projectId = 'ma-web-tools';
+const datastore = new Datastore({
+  projectId: projectId,
+});
 
 const port = process.env.PORT || defaultPort;
 const app = express();
@@ -140,6 +145,49 @@ app.post('/api/login', (req: $Request, res: $Response) => {
   } else {
     res.status(400).send({ error: 'User Not Found' });
   }
+});
+app.get('/api/get/1.0/fxUsers', (req: $Request, res: $Response) => {
+  const query = datastore.createQuery('FxUser');
+  datastore.runQuery(query).then(result => {
+    const transData = result.map(data => {
+      if (Array.isArray(data)) {
+        return data.map(atom => {
+          atom['Key'] = atom[datastore.KEY].id;
+          return atom;
+        })
+      }
+    });
+    transData.pop();
+    res.send(transData);
+  });
+});
+app.get('/api/get/1.0/fxUser', (req: $Request, res: $Response) => {
+  const id = req.query.id;
+  if (id == "new") {
+    return res.send([[{"AccountNumber": 0, "Name": "", Invalid: false, "Key": ""}]]);
+  }
+  const query = datastore.createQuery('FxUser').filter('__key__', datastore.key(['FxUser', parseInt(id)]));
+  datastore.runQuery(query).then(result => {
+    result[0][0]["Key"] = result[0][0][datastore.KEY].id;
+    res.send(result);
+  });
+});
+app.post('/api/add/1.0/fxUser', (req: $Request, res: $Response) => {
+  const { Name, AccountNumber, Invalid, Key } = req.body;
+  let targetKey = datastore.key('FxUser');
+  if (Key != "") {
+    targetKey = datastore.key(['FxUser', parseInt(Key)]);
+  }
+  datastore.save({
+    key: targetKey,
+    data: {
+      Name: Name,
+      AccountNumber: AccountNumber,
+      Invalid: Invalid,
+    }
+  }).then(result => {
+      return res.send(true);
+  });
 });
 
 app.get('*', async (req: $Request, res: $Response) => {

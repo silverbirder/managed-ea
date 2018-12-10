@@ -29,9 +29,9 @@ injectGlobal`
     -webkit-touch-callout: none;
   }
   a {
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
+    // color: inherit;
+    // text-decoration: none;
+    // cursor: pointer;
   }
   img {
     vertical-align: middle;
@@ -51,21 +51,21 @@ injectGlobal`
   input,
   textarea,
   button {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border: none;
-    border-radius: 0;
+    // margin: 0;
+    // padding: 0;
+    // outline: none;
+    // border: none;
+    // border-radius: 0;
     background-color: inherit;
-    color: inherit;
-    vertical-align: middle;
-    appearance: none;
+    // color: inherit;
+    // vertical-align: middle;
+    // appearance: none;
   }
   select {
     border-radius: 0;
   }
   input:-webkit-autofill,
   textarea:-webkit-autofill {
-    box-shadow: 0 0 0 1000px white inset;
+    // box-shadow: 0 0 0 1000px white inset;
   }
 `;

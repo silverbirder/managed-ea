@@ -46,6 +46,10 @@ const MenuLinkList = [
     to: '/unknown',
     text: 'To Not Exist Url',
   },
+  {
+    to: '/fxUser',
+    text: 'To FxUser',
+  },
 ];
 
 type Props = {
