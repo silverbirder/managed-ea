@@ -14,5 +14,6 @@ export const endpoint = {
   redirectAbout: '/redirect-about',
   fxuser: '/fxUser',
   fxUserDetail: '/fxUser/:id',
+  fxdata: '/fxData',
   notFound: '*',
 };

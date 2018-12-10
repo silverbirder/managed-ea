@@ -31,24 +31,12 @@ const MenuLink = styled.a`
 `;
 const MenuLinkList = [
   {
-    to: endpoint.landing,
-    text: 'To Landing Page（Only not logged in user）',
-  },
-  {
-    to: endpoint.home,
-    text: 'To Home Page（Only logged in user）',
-  },
-  {
-    to: endpoint.about,
-    text: 'To About Page',
-  },
-  {
-    to: '/unknown',
-    text: 'To Not Exist Url',
-  },
-  {
     to: '/fxUser',
     text: 'To FxUser',
+  },
+  {
+    to: '/fxData',
+    text: 'To FxData',
   },
 ];
 

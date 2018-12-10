@@ -5,7 +5,7 @@ import * as React from 'react';
 export default function OctIcon() {
   return (
     <a
-      href="https://github.com/silverbirder/managed-ea"
+      href="https://bitbucket.org/shibamoto/managed-ea"
       target="_blank"
       rel="noopener noreferrer"
     >

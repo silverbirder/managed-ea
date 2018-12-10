@@ -62,3 +62,11 @@ export function handleChange(key: string, value: Object): ThunkAction {
     });
   };
 }
+export function updateList(List: Object): ThunkAction {
+  return (dispatch: Dispatch) => {
+    dispatch({
+      type: 'UPDATE_LIST',
+      payload: List,
+    });
+  };
+}

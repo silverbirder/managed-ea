@@ -5,6 +5,7 @@ export type FxUser = {
   Invalid: boolean,
   Name: string,
   Key: string,
+  isChecked: boolean,
 };
 export type FxUserState = {
   fxUser: FxUser,
@@ -30,5 +31,10 @@ export type FxUserAction =
   payload: {
     key: string,
     value: Object,
+  }
+  | {
+  type: 'UPDATE_LIST',
+  payload: {
+    List: Object,
   }
 };

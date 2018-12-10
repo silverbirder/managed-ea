@@ -3,8 +3,8 @@
 import type { FxDataState, FxDataAction } from 'types/fxData';
 
 export const initialState = {
-  fxData: {
-    account0: 0,
+  FxData: {
+    accountNumber: 0,
     balance: 0,
     closePrice: 0,
     closeTime: new Date(),
@@ -23,15 +23,25 @@ export const initialState = {
     ticket: 0,
     type: '',
   },
+  FxDataList: [],
+  StartDate: '',
+  EndDate: '',
+  isDownloadCsv: false,
 };
 export default (state: FxDataState = initialState, action: FxDataAction) => {
   switch (action.type) {
     case 'FETCH_FX_DATA':
       return {
         ...state,
-        status: {
-          ...state.status,
-        },
+        FxDataList: action.payload,
+        isDownloadCsv: true,
+      };
+    case 'HANDLE_CHANGE':
+      const key = action.payload.key;
+      const value = action.payload.value;
+      return {
+        ...state,
+        [key]: value,
       };
     default:
       return state;

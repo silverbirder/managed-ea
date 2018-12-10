@@ -8,6 +8,7 @@ import UserDetail from 'pages/UserDetail';
 import About from 'pages/About';
 import FxUser from 'pages/FxUser';
 import FxUserDetail from 'pages/FxUserDetail';
+import FxData from 'pages/FxData';
 import RedirectAbout from 'pages/RedirectAbout';
 import NotFound from 'pages/NotFound';
 
@@ -61,6 +62,10 @@ export default [
       {
         path: endpoint.fxUserDetail,
         component: FxUserDetail,
+      },
+      {
+        path: endpoint.fxdata,
+        component: FxData,
       },
       {
         path: endpoint.redirectAbout,

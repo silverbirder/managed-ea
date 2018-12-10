@@ -22,9 +22,19 @@ export type FxData = {
 };
 export type FxDataState = {
   FxData: FxData,
+  FxDataList: FxData[],
+  StartDate: string,
+  EndDate: string,
 };
 export type FxDataAction =
   | {
       type: 'FETCH_FX_DATA',
-      payload: FxData,
+      payload: FxData[],
     }
+  | {
+  type: 'HANDLE_CHANGE',
+  payload: {
+    key: string,
+    value: Object,
+  }
+}

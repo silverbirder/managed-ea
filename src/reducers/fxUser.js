@@ -8,6 +8,7 @@ export const initialState = {
     Invalid: false,
     Name: '',
     Key: '',
+    isChecked: false,
   },
   fxUserList: [],
   status: {
@@ -49,6 +50,14 @@ export default (state: FxUserState = initialState, action: FxUserAction) => {
         fxUser: {
           ...state.fxUser,
           [key] : value,
+        },
+      };
+    case 'UPDATE_LIST':
+      return {
+        ...state,
+        fxUserList: action.payload,
+        status: {
+          ...state.status,
         },
       };
     default:
