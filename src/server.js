@@ -175,7 +175,8 @@ app.get('/api/get/1.0/fxUser', (req: $Request, res: $Response) => {
   });
 });
 app.post('/api/add/1.0/fxUser', (req: $Request, res: $Response) => {
-  const { Name, AccountNumber, Invalid, Key } = req.body;
+  let { Name, AccountNumber, Invalid, Key } = req.body;
+  AccountNumber = parseInt(AccountNumber);
   let targetKey = datastore.key('FxUser');
   if (Key != "") {
     targetKey = datastore.key(['FxUser', parseInt(Key)]);
