@@ -194,9 +194,7 @@ app.post('/api/get/1.0/fxData', (req: $Request, res: $Response) => {
   const { AccountNumber, StartDate, EndDate } = req.body;
   const query = datastore.createQuery('FxData').filter('openTime', '>=' , new Date(StartDate)).filter('openTime', '<=' , new Date(EndDate));
   datastore.runQuery(query).then(result => {
-    result[0] = result[0].filter((data) => {
-      return AccountNumber.indexOf(data.accountNumber) >= 0;
-    });
+    result[0] = result[0].filter((data) => AccountNumber.indexOf(data.accountNumber) >= 0);
     res.send(result);
   });
 });
