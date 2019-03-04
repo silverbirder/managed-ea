@@ -2,6 +2,10 @@
 
 All have been introduced React environment.
 
+## Output
+
+![output](https://res.cloudinary.com/silverbirder/image/upload/v1551705895/managed-ea/managed-ea.png)
+
 ## Features
 
 - [preact](https://preactjs.com/)
